@@ -1,0 +1,23 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@Routes/*": ["routes/*"],
+      "@Config/*": ["config/*"],
+      "@Controllers/*": ["controllers/*"],
+      "@Services/*": ["services/*"],
+    },
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true
+  },
+  "include": ["./src"]
+}
